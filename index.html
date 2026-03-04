@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M1K3-OS Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">M1K3-OS</div>
+        <div class="status">
+            <span id="clock">--:--</span>
+            <span class="dot"></span>
+            <span>secure</span>
+        </div>
+    </header>
+
+    <main class="grid">
+        <section class="terminal" aria-label="Terminal">
+            <div class="term-header">M1K3-OS@mrrift:~</div>
+            <div id="termOut" class="term-out"></div>
+
+            <form id="termForm" class="term-form" autocomplete="off">
+                <span class="prompt">M1K3-OS@mrrift:~$</span>
+                <input id="termIn" class="term-in" type="text" spellcheck="false" autofocus />
+            </form>
+
+            <div class="hint">Typ <b>help</b> om te starten.</div>
+        </section>
+
+        <section class="viewer" aria-label="Viewer">
+            <div class="viewer-header" id="viewerTitle">Welcome</div>
+            <div class="viewer-body" id="viewerBody">
+                <p class="big">Welkom in <b>M1K3-OS</b>.</p>
+                <p>Dit portfolio functioneerd als een live systeem. Jij kiest wat je opent en wat je wilt zien en/of
+                    weten.
+
+                    Het werkt als een live shell met commands. Type een van de volgende commands:
+                </p>
+                <p>Start met: <code>help</code>, <code>about</code>, <code>projects</code>, <code>open app1</code></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+
+</body>
+</html>
