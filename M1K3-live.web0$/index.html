@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M1K3-OS Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">M1K3-OS</div>
+        <div class="status">
+            <span id="clock">--:--</span>
+            <span class="dot"></span>
+            <span>secure</span>
+        </div>
+    </header>
+
+    <main class="grid">
+        <section class="terminal" aria-label="Terminal">
+            <div class="term-header">M1K3-OS@mrrift:~</div>
+            <div id="termOut" class="term-out"></div>
+
+            <form id="termForm" class="term-form" autocomplete="off">
+                <span class="prompt">M1K3-OS@mrrift:~$</span>
+                <input id="termIn" class="term-in" type="text" spellcheck="false" autofocus />
+            </form>
+
+            <div class="hint">Type <b>help</b> to get started. <br> <b>Tip:</b> explore the system using the terminal.</div>
+        </section>
+
+        <section class="viewer" aria-label="Viewer">
+            <div class="viewer-header" id="viewerTitle">Welcome</div>
+            <div class="viewer-body" id="viewerBody">
+                <p class="big">Welkom in <b>M1K3-OS</b>.</p>
+                <p>This is an interactive portfolio live system where u can navigate to diffrent topics and choose what u want to see.
+                    </p>
+
+                <p>U can navigate to diffrent subjects by typing commands listed bellow.</p>
+                <br>
+                <p>Start with: <code>help</code>, <code>about</code>, <code>projects</code>, <code>open project_name</code>, <code>whoami</code>  </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+
+</body>
+</html>
